@@ -16,7 +16,11 @@ const Sidebar = () => {
                         <li><NavLink to='/' className='link '>Home</NavLink></li>
                         <li><NavLink to='/about' className='link'>About</NavLink></li>
                         <li><NavLink to='/employee' className='link'>Employee</NavLink></li> 
+                        <li><NavLink to='/company' className='link'>Company</NavLink></li>
                     </ul>
+                </div>
+                <div className='row bg-light shadow-sm my-2 text-center p-3 '>
+                    <NavLink to='/empregister' className='btn btn-sm fw-bold border'>Employee Register</NavLink>
                 </div>
             </div>
 

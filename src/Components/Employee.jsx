@@ -69,7 +69,7 @@ const Employee = () => {
         <>
         <div>
             <div className='text-center'>
-                <h1 className='fw-bold mb-3'>Employee Details</h1>
+                <h1 className='fw-bold '>Employee Details</h1>
                 <div className='p-2 m-2 '>
                     <button className='btn btn-outline-secondary btn-sm mx-1' onClick={() => setData(allData)}>All</button>
                     <button className='btn btn-outline-secondary btn-sm mx-1' onClick={() => AdminData()}>Admin</button>
@@ -110,10 +110,6 @@ const Employee = () => {
                     })}
                 </tbody>
             </table>
-
-            <div className='text-center mt-5'>
-                <NavLink to='/empregister' className='btn btn-sm fw-bold border'>Employee Register</NavLink>
-            </div>
         </div>
         
         </>

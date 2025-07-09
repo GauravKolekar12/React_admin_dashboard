@@ -12,24 +12,26 @@ const Home = () => {
 
     const [chartData, setChartData] = useState([]);
 
+
+    // to fetch the data in pie chart form
     const fetchEmployeeData = async () => {
         try {
-        const response = await axios.get('http://localhost:3000/Employee');
-        const positionCounts = response.data.reduce((acc, curr) => {
-            acc[curr.position] = (acc[curr.position] || 0) + 1;
-            return acc;
-        }, {});
+            const response = await axios.get('http://localhost:3000/Employee');
+            const positionCounts = response.data.reduce((acc, curr) => {
+                acc[curr.position] = (acc[curr.position] || 0) + 1;
+                return acc;
+                }, {});
 
-        const finalData = Object.entries(positionCounts).map(([position, count]) => ({
-            name: position,
-            value: count,
-        }));
+            const finalData = Object.entries(positionCounts).map(([position, count]) => ({
+                name: position,
+                value: count,
+            }));
 
-        setChartData(finalData);
-        } catch (err) {
-        console.error(err);
-        }
-    };
+            setChartData(finalData);
+            } catch (err) {
+            console.error(err);
+            }
+        };
 
     useEffect(() => {
         fetchEmployeeData();
@@ -45,7 +47,7 @@ const Home = () => {
                             <div className="card datacard">
                                 <div className="card-body d-flex justify-content-center ">
                                     <i className="bi bi-people icon bg-primary" ></i>
-                                    <p className='mx-2 text-muted'>Employee</p>
+                                    <p className='mx-2 text-muted'>Employee{/*<span className='d-block'>700</span>*/}</p>
                                     <p className='fw-bold'>700</p>
                                 </div>
                             </div>
@@ -87,7 +89,7 @@ const Home = () => {
         </div>
 
         {/* ************Emp Position Distribution in pie chart************** */}
-        <div className='mt-5 border p-3'>
+        <div className='mt-3 border p-3'>
                     <h4 className='text-center'>Employee Position Distribution</h4>
                     <ResponsiveContainer width='100%' height={300}>
                         <PieChart>
@@ -108,7 +110,9 @@ const Home = () => {
                             <Legend />
                         </PieChart>
                     </ResponsiveContainer>
-                    </div>
+        </div>
+
+        {/* *********************************** */}
         </>
     )
 }

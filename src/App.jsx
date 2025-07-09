@@ -9,6 +9,7 @@ import './App.css'
 import Employee from './Components/Employee'
 import Empregister from './Components/Empregister'
 import Empedit from './Components/Empedit'
+import Company from './Components/Company'
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
             <Route path='/employee' element={<Employee/>}></Route>
             <Route path='/empedit/:id' element={<Empedit/>}></Route>
             <Route path='/empregister' element={<Empregister/>}></Route>
+            <Route path='/company' element={<Company/>}></Route>
           </Routes>
         </div>
       </div>
