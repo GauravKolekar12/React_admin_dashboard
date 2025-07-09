@@ -4,7 +4,7 @@ import { NavLink } from 'react-router'
 const Sidebar = () => {
     return (
         <>
-        <div className='sidebar'>  
+        <div className='sidebar bg-info-subtle'>  
             <div className='container'>
                 <div className='row bg-light shadow-sm p-1 mt-4 text-center'>
                     <div>

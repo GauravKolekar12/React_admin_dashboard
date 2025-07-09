@@ -1,11 +1,19 @@
-import React from 'react'
+import React from 'react';
+
+
 
 const About = () => {
+
+    
+
+
     return (
         <>
-        <h1 className='text-center'>About</h1>
+            <div className='mt-5'>
+                <h1 className='text-center'>About Us</h1>
+            </div>
         </>
-    )
-}
+    );
+};
 
-export default About
+export default About;

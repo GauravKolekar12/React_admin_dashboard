@@ -69,6 +69,20 @@
       "position": "Tester",
       "company": "Winzo Solutions",
       "id": 10
+    },
+    {
+      "name": "Robert",
+      "skill": "HTML",
+      "position": "Developer",
+      "company": "ABC Pvt.Ltd",
+      "id": 11
+    },
+    {
+      "name": "Chris",
+      "skill": "MERN",
+      "position": "Admin",
+      "company": "Rego Digital",
+      "id": 12
     }
   ]
 }

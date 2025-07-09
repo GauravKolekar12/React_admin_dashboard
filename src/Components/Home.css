@@ -1,0 +1,17 @@
+.datacard.active{
+    
+    /* font-weight: bold; */
+    /* height: 90px; */
+    align-items: center;
+    
+}
+
+.icon{
+    font-size: 17px;
+    color:white;
+    font-weight: bold;
+    /* background-color: antiquewhite; */
+    background-size: cover;
+    padding: 10px;
+    border-radius: 10%;
+}

@@ -51,6 +51,14 @@ const Employee = () => {
         setData(allData.filter((emp)=>emp.position === 'Manager'))
     }
 
+    const LeadData=()=>{
+        setData(allData.filter((emp)=>emp.position === 'Team Lead'))
+    }
+
+    const AdminData=()=>{
+        setData(allData.filter((emp)=>emp.position === 'Admin'))
+    }
+
 
 
 
@@ -59,46 +67,54 @@ const Employee = () => {
 
     return (
         <>
-        <div className='text-center'>
-            <h1 >Employee details</h1>
-            <div className='p-2 m-2 '>
-                <button className='btn btn-outline-secondary btn-sm mx-1' onClick={() => setData(allData)}>All</button>
-                <button className='btn btn-outline-secondary btn-sm mx-1 ' onClick={()=>DeveloperData()}>Developer</button>
-                <button className='btn btn-outline-secondary btn-sm mx-1' onClick={()=>TesterData()}>Tester</button>
-                <button className='btn btn-outline-secondary btn-sm mx-1' onClick={()=>ManagerData()}>Manager</button>
+        <div>
+            <div className='text-center'>
+                <h1 className='fw-bold mb-3'>Employee Details</h1>
+                <div className='p-2 m-2 '>
+                    <button className='btn btn-outline-secondary btn-sm mx-1' onClick={() => setData(allData)}>All</button>
+                    <button className='btn btn-outline-secondary btn-sm mx-1' onClick={() => AdminData()}>Admin</button>
+                    <button className='btn btn-outline-secondary btn-sm mx-1 ' onClick={()=>DeveloperData()}>Developer</button>
+                    <button className='btn btn-outline-secondary btn-sm mx-1' onClick={()=>TesterData()}>Tester</button>
+                    <button className='btn btn-outline-secondary btn-sm mx-1' onClick={()=>ManagerData()}>Manager</button>
+                    <button className='btn btn-outline-secondary btn-sm mx-1' onClick={() => LeadData()}>Team Lead</button>
+                </div>
+            </div>
+
+            <table className='table table-striped table-bordered text-center shadow-lg'>
+                <thead>
+                    <tr>
+                        <th>Sr.No</th>
+                        <th>Name</th>
+                        <th>Skill</th>
+                        <th>Position</th>
+                        <th>Company</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {
+                    Array.isArray(data) && data.map((val,index)=>{
+                        return(
+                            <tr key={index}>
+                                <td>{index+1}</td>
+                                <td>{val.name}</td>
+                                <td>{val.skill}</td>
+                                <td>{val.position}</td>
+                                <td>{val.company}</td>
+                                <td><button className='btn btn-sm text-danger mx-2' onClick={() => { if (window.confirm('Are You Sure?')) { DeleteEmp(val.id) } }}><i className="bi bi-trash"></i></button>
+                                <NavLink to={`/empedit/${val.id}`} className='btn btn-sm text-primary mx-2'><i className="bi bi-pencil-square"></i></NavLink>
+                                </td>
+                                
+                            </tr>
+                        )
+                    })}
+                </tbody>
+            </table>
+
+            <div className='text-center mt-5'>
+                <NavLink to='/empregister' className='btn btn-sm fw-bold border'>Employee Register</NavLink>
             </div>
         </div>
-
-        <table className='table table-striped table-bordered text-center shadow-lg'>
-            <thead>
-                <tr>
-                    <th>Sr.No</th>
-                    <th>Name</th>
-                    <th>Skill</th>
-                    <th>Position</th>
-                    <th>Company</th>
-                    <th>Actions</th>
-                </tr>
-            </thead>
-            <tbody>
-                {
-                Array.isArray(data) && data.map((val,index)=>{
-                    return(
-                        <tr key={index}>
-                            <td>{index+1}</td>
-                            <td>{val.name}</td>
-                            <td>{val.skill}</td>
-                            <td>{val.position}</td>
-                            <td>{val.company}</td>
-                            <td><button className='btn btn-sm mx-2' onClick={() => { if (window.confirm('Are You Sure?')) { DeleteEmp(val.id) } }}><i className="bi bi-trash"></i></button>
-                            <NavLink to={`/empedit/${val.id}`} className='btn btn-sm mx-2'><i className="bi bi-pencil-square"></i></NavLink>
-                            </td>
-                            
-                        </tr>
-                    )
-                })}
-            </tbody>
-        </table>
         
         </>
     )
