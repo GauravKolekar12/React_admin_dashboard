@@ -1,0 +1,31 @@
+/* App.css */
+.app {
+    display: flex;
+}
+
+.sidebar {
+    width: 200px;
+    /* background-color: #222121fe; */
+    height: 100vh;
+    /* padding: 10px;    */
+    position: fixed;
+}
+
+.link {
+    display: block;
+    margin-bottom: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+.link.active {
+    font-weight: bold;
+    color: blue;
+}
+
+.content {
+    
+    margin-left: 220px;
+    padding: 20px;
+    flex: 1;
+}

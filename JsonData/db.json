@@ -1,0 +1,74 @@
+{
+  "Employee": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "skill": "React",
+      "position": "Developer",
+      "company": "ABC Pvt.Ltd"
+    },
+    {
+      "id": 2,
+      "name": "Mitchell ",
+      "skill": "Java",
+      "position": "Team Lead",
+      "company": "xyz solutions"
+    },
+    {
+      "name": "Tim",
+      "skill": "MERN",
+      "position": "Manager",
+      "company": "Rego Digital",
+      "id": 3
+    },
+    {
+      "name": "Thomas",
+      "skill": "python",
+      "position": "Tester",
+      "company": "Classic Digital",
+      "id": 4
+    },
+    {
+      "name": "Roman",
+      "skill": "Javascript",
+      "position": "Developer",
+      "company": "Texto.Pvt.Ltd",
+      "id": 5
+    },
+    {
+      "name": "Travis",
+      "skill": "React",
+      "position": "Manager",
+      "company": "Rego Digital",
+      "id": 6
+    },
+    {
+      "name": "Charu",
+      "skill": ".Net",
+      "position": "Team Lead",
+      "company": "Rego Digital",
+      "id": 7
+    },
+    {
+      "name": "Jemmy",
+      "skill": "python",
+      "position": "Tester",
+      "company": "Winzo Solutions",
+      "id": 8
+    },
+    {
+      "name": "Bunny",
+      "skill": "MERN",
+      "position": "Developer",
+      "company": "Classic Digital",
+      "id": 9
+    },
+    {
+      "name": "Kane",
+      "skill": "Java",
+      "position": "Tester",
+      "company": "Winzo Solutions",
+      "id": 10
+    }
+  ]
+}
