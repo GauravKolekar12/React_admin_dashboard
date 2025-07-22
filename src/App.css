@@ -29,3 +29,7 @@
     padding: 20px;
     flex: 1;
 }
+
+.sidebar .btn.active{
+    color: blue;
+}

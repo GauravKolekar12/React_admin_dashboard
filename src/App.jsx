@@ -11,6 +11,8 @@ import Empregister from './Components/Empregister'
 import Empedit from './Components/Empedit'
 import Company from './Components/Company'
 
+
+
 const App = () => {
   return (
     <>

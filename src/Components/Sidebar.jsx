@@ -6,12 +6,13 @@ const Sidebar = () => {
         <>
         <div className='sidebar bg-info-subtle'>  
             <div className='container'>
-                <div className='row bg-light shadow-sm p-1 mt-4 text-center'>
+                <div className='row bg-light shadow-sm text-center py-3 mb-4 rounded'>
                     <div>
-                        <h4 className='pb-4 mt-5'><img src='./vite.svg' className='thumbnail' alt='react' style={{width:'20px',}}/> Admin Dashboard</h4>
+                        <h4 className='mb-0 d-flex justify-content-center align-items-center gap-2'>
+                        <img src='./vite.svg' className='thumbnail' alt='react' style={{width:'20px',fontFamily:''}}/> Admin Dashboard</h4>
                     </div> 
                 </div>
-                <div className='row  bg-light shadow-sm my-2 text-center p-3 '>
+                <div className='row bg-light shadow-sm text-center p-3 mb-3 rounded'>
                     <ul className='list-unstyled'>
                         <li><NavLink to='/' className='link '>Home</NavLink></li>
                         <li><NavLink to='/about' className='link'>About</NavLink></li>
@@ -19,15 +20,10 @@ const Sidebar = () => {
                         <li><NavLink to='/company' className='link'>Company</NavLink></li>
                     </ul>
                 </div>
-                <div className='row bg-light shadow-sm my-2 text-center p-3 '>
-                    <NavLink to='/empregister' className='btn btn-sm fw-bold border'>Employee Register</NavLink>
+                <div className='row bg-light shadow-sm text-center p-3 rounded'>
+                    <NavLink to='/empregister' className='btn btn-sm fw-bold'>Employee Register</NavLink>
                 </div>
             </div>
-
-
-
-
-                
         </div>
         </>
     )

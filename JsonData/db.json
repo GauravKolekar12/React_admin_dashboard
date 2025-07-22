@@ -1,18 +1,18 @@
 {
   "Employee": [
     {
-      "id": 1,
       "name": "John Doe",
       "skill": "React",
       "position": "Developer",
-      "company": "ABC Pvt.Ltd"
+      "company": "ABC Pvt.Ltd",
+      "id": 1
     },
     {
-      "id": 2,
       "name": "Mitchell ",
       "skill": "Java",
       "position": "Team Lead",
-      "company": "xyz solutions"
+      "company": "xyz solutions",
+      "id": 2
     },
     {
       "name": "Tim",
@@ -83,60 +83,71 @@
       "position": "Admin",
       "company": "Rego Digital",
       "id": 12
+    },
+    {
+      "name": "Gaurav",
+      "skill": "MERN",
+      "position": "Admin",
+      "company": "abc",
+      "id": 13
+    },
+    {
+      "name": "Abhay",
+      "skill": "CSS",
+      "position": "Developer",
+      "company": "Texto.Pvt.Ltd",
+      "id": 14
     }
   ],
-
-
-
-  "Companydetails":[
+  "Companydetails": [
     {
-      "id":1,
-      "img":"",
-      "companyname":"Rego Digital",
-      "address":"Gandhi Nagar",
-      "city":"Pune",
-      "companymail":"rego.pvt@gmail.com",
-      "phone":"+1 25669 88985"
+      "id": 1,
+      "img": "",
+      "companyname": "Rego Digital",
+      "address": "Gandhi Nagar",
+      "city": "Pune",
+      "companymail": "rego.pvt@gmail.com",
+      "phone": "+1 25669 88985"
     },
     {
-      "id":2,
-      "companyname":"Winzo Solutions",
-      "address":"PCMC",
-      "city":"Pune",
-      "companymail":"winz34@gmail.com",
-      "phone":"+1 25669 7654"
+      "id": 2,
+      "companyname": "Winzo Solutions",
+      "address": "PCMC",
+      "city": "Pune",
+      "companymail": "winz34@gmail.com",
+      "phone": "+1 25669 7654"
     },
     {
-      "id":3,
-      "companyname":"ABC Pvt.Ltd",
-      "address":"Pune",
-      "city":"Pune",
-      "companymail":"abc@gmail.com",
-      "phone":"+1 12345 88985"
+      "id": 3,
+      "companyname": "ABC Pvt.Ltd",
+      "address": "Pune",
+      "city": "Pune",
+      "companymail": "abc@gmail.com",
+      "phone": "+1 12345 88985"
     },
     {
-      "id":4,
-      "companyname":"Classic Digital",
-      "address":"Kharadi",
-      "city":"Pune",
-      "companymail":"rego.pvt@gmail.com",
-      "phone":"+3 25669 44985"
+      "id": 4,
+      "companyname": "Classic Digital",
+      "address": "Kharadi",
+      "city": "Pune",
+      "companymail": "rego.pvt@gmail.com",
+      "phone": "+3 25669 44985"
     },
     {
-      "id":5,
-      "companyname":"Texto.Pvt.Ltd",
-      "address":"Bandra",
-      "city":"Mumbai",
-      "companymail":"txtopvtltd@gmail.com",
-      "phone":"+1 25669 88985"
+      "id": 5,
+      "companyname": "Texto.Pvt.Ltd",
+      "address": "Bandra",
+      "city": "Mumbai",
+      "companymail": "txtopvtltd@gmail.com",
+      "phone": "+1 25669 88985"
     },
     {
-      "id":6,
-      "companyname":"Xterm Solutions",
-      "address":"Hadapsar",
-      "city":"Pune",
-      "companymail":"xgraph46@gmail.com",
-      "phone":"+1 40020 88985"
+      "id": 6,
+      "companyname": "Xterm Solutions",
+      "address": "Hadapsar",
+      "city": "Pune",
+      "companymail": "xgraph46@gmail.com",
+      "phone": "+1 40020 88985"
     }
   ]
 }
